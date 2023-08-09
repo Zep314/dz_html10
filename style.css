@@ -123,6 +123,8 @@ body {
 
 .menu_ul1 {
     list-style-type: none;
+    display: grid;
+    gap: 0;
 }
 
 .menu_link1 {
@@ -132,7 +134,8 @@ body {
     font-weight: 400;
     line-height: normal;
     padding-left: 32px;
-    padding-top: 24px;
+    padding-top: 20px;
+
 }
 
 .menu_caption {
@@ -301,6 +304,7 @@ body {
 .page1_text2 {
     color: #f16d7f;
     font-size: 24px;
+    text-align: center;
 }
 
 .page2 {
@@ -588,7 +592,7 @@ body {
 .page4_item {
     width: 800px;
     height: 448px;
-    display: flexbox;
+    display: block;
     align-items: center;
     justify-content: center;
 }
