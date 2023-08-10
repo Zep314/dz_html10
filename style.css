@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
 * {
     margin: 0;
@@ -54,6 +53,7 @@ body {
 .search_glass {
     width: 26px;
     height: 26px;
+    
 }
 
 .search_glass:hover path{
@@ -65,13 +65,8 @@ body {
 .three_lines {
     width: 32px;
     height: 28px;
+    cursor: pointer;
 }
-
-/* .three_lines:hover path{     ==============================================================
-    fill: #f16d7f;
-    transition: 0.5s;
-}  */
-
 
 .man {
     width: 29px;
@@ -107,18 +102,15 @@ body {
     transition: 0.5s;
 }
 
-
-
 .popup_menu {
     width: 232px;
     height: 634px;
     position: absolute;
-    /* transform: translate(1136px, 75px); */
     transform: translate(0px, 355px);
     display: none;
     background: #fff;
     border: none;
-    color: #000;
+    color: #000; 
 }
 
 .menu_ul1 {
@@ -168,7 +160,7 @@ body {
 }
 
 .menu_item {
-    padding-top: 11px;
+    padding-top: 14px;
 }
 
 .three_lines:hover path {
@@ -176,15 +168,25 @@ body {
     transition: 0.5s;
 } 
 
-.three_lines:hover + div {
+/* .three_lines:active + .popup_menu {
+    fill: #f00;
+    transition: 0.5s;
+    display: block;
+}  */
+
+.three_lines:active {
+    fill: #f00;
+    transition: 0.5s;
     display: block;
 } 
 
-.three_lines:active path{
-    fill: #f00;
-    transition: 0.5s;
-} 
+.checkbox_menu {
+    display: none;
+}
 
+.checkbox_menu:checked + .popup_menu {
+    display: block;
+}
 
 .header {
     height: 764px;
@@ -1123,3 +1125,4 @@ body {
     }
 
 }
+
